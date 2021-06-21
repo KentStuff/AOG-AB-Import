@@ -57,6 +57,7 @@
             this.btnSaveEditName = new System.Windows.Forms.Button();
             this.btnCancelEditName = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.ABLoadBtn = new System.Windows.Forms.Button();
             this.panelAPlus.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudHeading)).BeginInit();
             this.panelName.SuspendLayout();
@@ -281,6 +282,7 @@
             // panelPick
             // 
             this.panelPick.BackColor = System.Drawing.Color.Transparent;
+            this.panelPick.Controls.Add(this.ABLoadBtn);
             this.panelPick.Controls.Add(this.btnSwapAB);
             this.panelPick.Controls.Add(this.btnEditName);
             this.panelPick.Controls.Add(this.btnDuplicate);
@@ -349,7 +351,7 @@
             this.btnNewABLine.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnNewABLine.Image = global::AgOpenGPS.Properties.Resources.AddNew;
             this.btnNewABLine.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnNewABLine.Location = new System.Drawing.Point(236, 243);
+            this.btnNewABLine.Location = new System.Drawing.Point(283, 243);
             this.btnNewABLine.Name = "btnNewABLine";
             this.btnNewABLine.Size = new System.Drawing.Size(73, 63);
             this.btnNewABLine.TabIndex = 149;
@@ -367,7 +369,7 @@
             this.btnCancel.Font = new System.Drawing.Font("Tahoma", 14.25F);
             this.btnCancel.Image = global::AgOpenGPS.Properties.Resources.Cancel64;
             this.btnCancel.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.btnCancel.Location = new System.Drawing.Point(121, 243);
+            this.btnCancel.Location = new System.Drawing.Point(204, 242);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(73, 63);
             this.btnCancel.TabIndex = 421;
@@ -507,12 +509,29 @@
             this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.textBox2.Enter += new System.EventHandler(this.textBox2_Enter);
             // 
+            // ABLoadBtn
+            // 
+            this.ABLoadBtn.BackColor = System.Drawing.Color.Transparent;
+            this.ABLoadBtn.FlatAppearance.BorderColor = System.Drawing.Color.Black;
+            this.ABLoadBtn.FlatAppearance.BorderSize = 0;
+            this.ABLoadBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ABLoadBtn.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ABLoadBtn.Image = global::AgOpenGPS.Properties.Resources.FileExplorerWindows;
+            this.ABLoadBtn.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.ABLoadBtn.Location = new System.Drawing.Point(104, 243);
+            this.ABLoadBtn.Name = "ABLoadBtn";
+            this.ABLoadBtn.Size = new System.Drawing.Size(73, 63);
+            this.ABLoadBtn.TabIndex = 425;
+            this.ABLoadBtn.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.ABLoadBtn.UseVisualStyleBackColor = false;
+            this.ABLoadBtn.Click += new System.EventHandler(this.ABLoadBtn_Click);
+            // 
             // FormABLine
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ClientSize = new System.Drawing.Size(808, 655);
+            this.ClientSize = new System.Drawing.Size(804, 651);
             this.ControlBox = false;
             this.Controls.Add(this.panelEditName);
             this.Controls.Add(this.panelPick);
@@ -571,5 +590,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnSwapAB;
+        private System.Windows.Forms.Button ABLoadBtn;
     }
 }

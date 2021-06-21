@@ -612,6 +612,16 @@ namespace AgOpenGPS
 
             isABValid = false;
         }
+        public void ReBaseABLine(vec2 _base)
+        {
+            vec2 pnt = new vec2(_base.easting, _base.northing);
+            lineArr[numABLineSelected-1].origin = pnt;
+            refPoint1 = lineArr[numABLineSelected - 1].origin;
+            abHeading = lineArr[numABLineSelected - 1].heading;
+            SetABLineByHeading();
+
+        }
+
     }
 
     public class CABLines

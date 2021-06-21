@@ -141,7 +141,8 @@ namespace AgOpenGPS
         {
             if (mf.ABLine.isABLineSet)
             {
-                mf.ABLine.MoveABLine(mf.ABLine.distanceFromCurrentLinePivot);
+               mf.ABLine.MoveABLine(mf.ABLine.distanceFromRefLine);
+               // mf.ABLine.ReBaseABLine(mf.ABLine.goalPointAB);
             }
         }
 
